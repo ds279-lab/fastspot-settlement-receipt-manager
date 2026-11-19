@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@media print {
+  body.printing-receipts #root,
+  body.printing-loans #root {
+    visibility: hidden;
+  }
+
+  body.printing-receipts #root .overflow-hidden,
+  body.printing-loans #root .overflow-hidden {
+    overflow: visible !important;
+  }
+
+  body.printing-receipts #root [data-print-table="receipts"],
+  body.printing-receipts #root [data-print-table="receipts"] *,
+  body.printing-loans #root [data-print-table="loans"],
+  body.printing-loans #root [data-print-table="loans"] * {
+    visibility: visible;
+  }
+
+  body.printing-receipts #root [data-print-table="receipts"],
+  body.printing-loans #root [data-print-table="loans"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    overflow: visible;
+    border: 0;
+    box-shadow: none;
+  }
+
+  body.printing-receipts #root [data-print-table="receipts"] table,
+  body.printing-loans #root [data-print-table="loans"] table {
+    width: 100%;
+    font-size: 7pt;
+  }
+
+  body.printing-receipts #root [data-print-table="receipts"] th,
+  body.printing-receipts #root [data-print-table="receipts"] td,
+  body.printing-loans #root [data-print-table="loans"] th,
+  body.printing-loans #root [data-print-table="loans"] td {
+    padding: 3px;
+    color: #000;
+  }
+
+  body.printing-receipts #root [data-print-table="receipts"] th:first-child,
+  body.printing-receipts #root [data-print-table="receipts"] td:first-child,
+  body.printing-receipts #root [data-print-table="receipts"] th:last-child,
+  body.printing-receipts #root [data-print-table="receipts"] td:last-child,
+  body.printing-loans #root [data-print-table="loans"] th:last-child,
+  body.printing-loans #root [data-print-table="loans"] td:last-child {
+    display: none;
+  }
+
+  body.printing-loans #root [data-print-table="loans"] td:nth-child(7) {
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+}

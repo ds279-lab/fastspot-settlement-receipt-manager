@@ -1,6 +1,6 @@
 {
-  "name": "Fastspot Settlement & Receipt Manager",
-  "description": "Internal operations tool for uploading transaction PDF receipts, automated data extraction, cumulative sum reconciliations, and separate principal and commission settlements.",
+  "name": "Fastspot Transfers — Transfers, Lending & Subscriptions",
+  "description": "Fastspot Transfers: Precise UGX & DA currency calculations, money transfers, money lending, and online subscriptions with zero guesswork.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

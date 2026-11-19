@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import faviconUrl from '../../path/favicon.ico';
 import { 
   Layers, 
   DollarSign, 
@@ -76,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="shrink-0 rounded-xl cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             <img
-              src="/path/favicon.ico"
+              src={faviconUrl}
               alt=""
               className="h-10 w-10 rounded-xl object-contain shadow-sm ring-2 ring-indigo-500/20 transition-shadow hover:ring-indigo-500/50"
             />

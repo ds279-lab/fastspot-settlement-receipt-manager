@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import faviconUrl from '../../path/favicon.ico';
 import { 
   X, 
   CheckCircle2, 
@@ -60,7 +61,7 @@ export const ReceiptDetailModal: React.FC<ReceiptDetailModalProps> = ({
           <div className="flex items-center gap-2.5">
             <div className="p-2 bg-indigo-100 text-indigo-700 rounded-lg">
               <img
-                src="/path/favicon.ico"
+                src={faviconUrl}
                 alt="Fastspot Transfers"
                 className="h-5 w-5 object-contain"
               />
@@ -191,7 +192,7 @@ export const ReceiptDetailModal: React.FC<ReceiptDetailModalProps> = ({
               {/* Receipt Table */}
               <div className="relative isolate overflow-hidden bg-white border border-slate-200 rounded-xl p-4 text-xs space-y-2">
                 <img
-                  src="/path/favicon.ico"
+                  src={faviconUrl}
                   alt=""
                   aria-hidden="true"
                   className="pointer-events-none absolute left-1/2 top-1/2 z-[-1] h-48 w-48 -translate-x-1/2 -translate-y-1/2 object-contain opacity-[0.08]"
